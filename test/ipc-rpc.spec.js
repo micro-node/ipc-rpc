@@ -1,9 +1,11 @@
+require('babel/register');
+
 var util = require('util');
 var cp = require('child_process');
 var async = require('async');
 var expect = require('chai').expect;
 
-var ipc = require('../index');
+var ipc = require('../lib/ipc-rpc');
 
 var server = ipc.request(cp.fork(__dirname + '/parrot.js'));
 

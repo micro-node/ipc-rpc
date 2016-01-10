@@ -1,4 +1,6 @@
-var ipc = require('../index');
+require('babel/register');
+
+var ipc = require('../lib/ipc-rpc');
 
 ipc.response(process)(function(req, cb){
 

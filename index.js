@@ -1,3 +1,1 @@
-require('babel/register');
-
-module.exports = require('./lib/ipc-rpc');
+module.exports = require('./build/ipc-rpc');
